@@ -1,6 +1,6 @@
 # HTML
 
-## HTML introduction
+## HTML introduction(소개)
 
 https://www.w3schools.com/html/html_intro.asp
 
@@ -11,7 +11,7 @@ https://www.w3schools.com/html/html_intro.asp
 > - 웹페이지의 콘텐츠 표시
 > - 웹페이지 구조 표시
 
-## HTML Elements
+## HTML Elements(요소)
 
 https://www.w3schools.com/html/html_elements.asp
 
