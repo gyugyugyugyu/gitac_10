@@ -1,6 +1,7 @@
 # HTML
 
 ## HTML introduction(소개)
+
 https://www.w3schools.com/html/html_intro.asp
 
 > HTML : Hyper Text Markup Language
@@ -11,6 +12,7 @@ https://www.w3schools.com/html/html_intro.asp
 > - 웹페이지 구조 표시
 
 ## HTML Elements(요소)
+
 https://www.w3schools.com/html/html_elements.asp
 
 - 콘텐츠를 표시하는 언어 : 태그
@@ -49,6 +51,7 @@ https://www.w3schools.com/html/html_elements.asp
 ```
 
 ## HTML 기본 구조
+
 ```
 <!DOCTYPE html> : 웹 문서 종류 표시
 <html> : html 문서 영역을 표시
@@ -59,7 +62,10 @@ https://www.w3schools.com/html/html_elements.asp
 </html>
 ```
 
+- 단축키 : shift + 1 이후 ! 누르기
+
 ## HTML Attribute(속성)
+
 https://www.w3schools.com/html/html_attributes.asp
 
 - HTML Elements에 추가 정보를 제공
@@ -69,17 +75,20 @@ https://www.w3schools.com/html/html_attributes.asp
 ## HTML Contents 표시 Elements
 
 > Text Contents
->  - 제목, 단락, 목록, 링크, 테이블(표) 등
-> Multimedia Contents
->  - 이미지, 비디오, 오디오  
+>
+> - 제목, 단락, 목록, 링크, 테이블(표) 등
+>   Multimedia Contents
+> - 이미지, 비디오, 오디오
 
 ### HTML Heading
+
 https://www.w3schools.com/html/html_headings.asp
 
-- h : (h)eading : 제목 표시 태그 
+- h : (h)eading : 제목 표시 태그
 - h1 ~ h6 : h1 - 가장 큰 제목
 
 ### HTML Paragraph
+
 https://www.w3schools.com/html/html_paragraphs.asp
 
 - p : (p)aragraph : 단락 표시 태그
@@ -88,6 +97,7 @@ https://www.w3schools.com/html/html_paragraphs.asp
 - hr : (H)orizontal (R)ule - 수평선 / 빈 요소 (Empty Eliment)
 
 ### HTML Link
+
 https://www.w3schools.com/html/html_links.asp
 
 - 다른 페이지로 연결
@@ -101,6 +111,7 @@ target="_blank" : 새 창(탭) 열기
 ```
 
 ### HTML List
+
 https://www.w3schools.com/html/html_lists.asp
 
 - 순서 없는 목록 : ul - (u)nordered (l)ist
