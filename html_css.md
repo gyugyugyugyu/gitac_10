@@ -312,8 +312,8 @@ https://www.w3schools.com/html/html_classes.asp
 ```
 // HTML
 <p id="paragraph">단락</p>
-
 <div class="container">콘텐츠</div>
+<div id="para" class="section">구조</div> 
 
 // CSS
 - Element 선택자
@@ -331,3 +331,111 @@ p{
   color:blue;
 }
 ```
+
+- 선택자 연결 표현
+    - 선택자의 자세한 표현
+
+```
+<p id="para" class="sentence">단락</p>
+
+p#para{}
+
+p.sentence{}
+
+#para.sentence{}
+```
+
+## CSS 작성방식
+
+-External : 외부 파일
+-Internal : html 페이지에 CSS를 작성 - head > style 태그를 사용해서 CSS 코드 작성
+-Inline : HTML 요소에 style attribute를 사용해서 직접 적용
+
+## Color 이론
+
+- 색 혼합 방식
+ 
+  - 가산 혼합 : 빛 혼합
+    - 혼합하는 색이 많을수록 밝아짐, 모든 색이 혼합 => 흰색
+    - 스크린(화면)
+    - 컬러 모드 : R(ed)G(reen)B(lue) 
+
+  - 감산 혼합 : 잉크 혼합
+    - 혼합하는 색이 많을수록 어두어짐, 모든 색 혼합 => 검정
+    - 프린터
+    - 컬러모드 : C(yan)M(agenta)Y(ellow)(blac)K 
+
+- RGB 컬러모드에서 색 표현 
+  - 각각의 색 표현 용량 1byte => Red(8bit), Green(8bit), Blue(8bit)
+  - 24bit true color : 약 1700만개 색 표현
+  - 10진수 표현(0~9)
+    - RGB(red 값(0~255), green 값(0~255), blue 값(0~255))
+    - Ex) rgb(100, 50, 245)
+  - 16진수 표현(0~9, A(10), B(11), C(12), D(13), E(14), F(15))
+    - #R(AA)G(0E)B(FF)
+    - Ex) #3A79BF
+
+> 컴퓨터에서 사용하는 진법(진수) - 2진수(0,1)
+> 
+> 용량 단위 
+> - bit : 데이터 저장할 수 있는 최소 단위 
+> > 저장 공간 한 칸 : 0, 1 중에 하나를 저장
+> 
+> - byte : 1byte = 8bit
+> > byte < KB < MB < GB < TB
+> 
+> 용량 계산
+> - 1byte = 8bit가 저장할 수 있는 데이터 개수 : 256개(0~255)
+
+## CSS 상속
+
+- 조상요소, 부모요소에 적용된 CSS style이 자식요소, 자손요소에 상속돼 적용되는 현상 
+- 모든 CSS 속성이 상속되는 것은 아님 
+- 모든 HTML Element가 상속되는 것은 아님
+
+```
+<div>
+  <p>단락</p>
+</div>
+
+div{
+  color:red;
+}
+
+*div에 적용한 색이 p에도 상속돼 적용됨
+```
+
+## CSS Property(속성)
+
+- HTML Contents Styling
+  - Text Content
+  - Multi media Contents Styling
+
+- HTML Structure Styling
+
+## Text Contents Styling
+
+### CSS Text
+https://www.w3schools.com/css/css_text.asp
+
+- color : text color 지정
+
+```
+p {
+  color:#388694;
+}
+```
+
+- text-align : 텍스트 정렬
+  - left, right, center, justify (양쪽정렬)
+
+- text-decoration : 텍스트 줄
+  - overline, line-through, underline, none
+
+- text-indent : 들여쓰기
+
+- letter-spacing : 자간 (글자 간격)
+  - 양수, 음수 사용 가능
+
+- line-height : 줄 높이
+  - px, 배수 표현
