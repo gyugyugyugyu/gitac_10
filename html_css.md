@@ -496,3 +496,9 @@ https://www.w3schools.com/css/css_table.asp
 
 - Table 셀 테두리 사이의 틈을 없애고 사용 
 
+## Multi media contents styling
+
+- image
+- video
+
+- 크기 조정, 배치 => Box Styling
