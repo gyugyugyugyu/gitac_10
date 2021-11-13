@@ -6,12 +6,51 @@
   <!-- IE 브라우저를 최신 버전으로 인식하도록 설정-->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Web Page Structure</title>
+  <style>
+    header, 
+    nav, 
+    footer{
+      width:500px;
+      height:50px;
+      background:#efefef;
+      border:1px solid #333;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing:border-box;
+    }
+    section, 
+    article{
+      width:400px;
+      height:100px;
+      background:#efefef;
+      border:1px solid #333;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing:border-box;
+    }
+    aside{
+      width:100px;
+      height:200px;
+      background:#efefef;
+      border:1px solid #333;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing:border-box;
+    }
+    .flex-container{
+      display:flex;
+    }
+  </style>
+
 </head>
 <body>
   
   <header>header</header>
   <nav>nav</nav>
-  <div>
+  <div class="flex-container">
     <div>
       <section>section</section>
       <article>article</article>

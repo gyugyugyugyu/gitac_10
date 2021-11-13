@@ -15,7 +15,7 @@
           font-weight: normal;
           font-style: normal;
       }
-
+      
       body{
         font-size:15px;
         color:#555555;
@@ -34,10 +34,15 @@
       }
       .contents-list{
         list-style:none;
+        border:1px solid grey;
+        width:300px;
+        padding:20px;
+        background:#eeeeee;
       }
       .contents-item{
-        letter-spacing: 5px;
-        line-height: 1.6;
+        letter-spacing:5px;
+        line-height:1.6;
+        margin-bottom:10px;
       }
       .contents-link{
         color:#555555;
@@ -49,6 +54,25 @@
       }
       table{
         border-collapse: collapse;
+        width:500px;
+      }
+      th,
+      td{
+        border-top:1px solid gray;
+        border-bottom:1px solid gray;
+        text-align:center;
+        padding: 50px;
+      }
+      img{
+        width:300px;
+      }
+      video{
+        width:300px;
+      }
+      iframe{
+        width:300px;
+        height:700px;
+        margin:50px;
       }
     </style>
   </head>
@@ -71,10 +95,8 @@
     </p>
     <p>
       <a class="para-link" href="https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EC%97%85_%EC%96%B8%EC%96%B4w3c"
-        target="_blank"
-        >W3C</a
-      >는 <br />
-      2014년 10월 28일 <br />
+        target="_blank">W3C</a>는 <br>
+      2014년 10월 28일 <br>
       HTML5 표준안을 확정했다고 &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;발표했다.
     </p>
     <p>
@@ -94,7 +116,7 @@
     </ol>
 
     <h2>HTML4와의 차이점</h2>
-    <hr />
+    <hr>
     <ul>
       <li>
         요소 추가
@@ -184,7 +206,7 @@
     </dl>
     <h2 id="chapter3">브라우저 지원 현황</h2>
     <hr />
-    <table border="1">
+    <table>
       <thead>
         <tr>
           <th>a</th>
@@ -1001,7 +1023,8 @@
       <source src="video.mp4">
     </video>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/53SlwIRK1v8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/53SlwIRK1v8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
     <a href="#">Top</a>
   </body>
 </html>
