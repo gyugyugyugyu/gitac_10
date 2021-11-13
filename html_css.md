@@ -715,3 +715,9 @@ h1{
 
 - align-items
   - flex-start, center, flex-end
+
+## 반응형 웹
+
+- 뷰포트 설정
+- 미디어 쿼리 
+- 해상도 구역 나누기(break point)
