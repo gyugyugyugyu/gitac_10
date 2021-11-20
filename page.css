@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	/* line-height: 1; */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* page css */ 
+
+.header{
+  height:100px;
+	background:#fff;
+	display:flex;
+	justify-content:space-between;
+	padding:38px 100px;
+	box-sizing:border-box;
+}
+
+.gnb-list{
+	display:flex;
+}
+
+.gnb-item{
+	margin-left:50px;
+}
+
+.gnb-link{
+  font-size:13px;
+  color:#000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.gnb-link:hover{
+	color:#10c9c3
+}
+
+.section1{
+	height:315px;
+	background:#f6f6f6;
+	text-align:center;
+	padding-top:95px;
+	box-sizing:border-box;
+}
+
+.section-heading{
+	font-size:38px;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.section-paragraph{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:16px;
+	width:500px;
+	color:#787878;
+	margin:20px auto 0;
+	/* auto는 가운데 정렬 */
+}
+
+.visual-content{
+	width:340px;
+	height:300px;
+}
+
+.visual-wrap{
+	width:340px;
+	height:300px;
+	overflow:hidden;
+}
+
+.video-content{
+	height:300px;
+}
+
+.group{
+	width:1360px;
+	display:flex;
+	flex-wrap:wrap;
+	margin: 0 auto;
+}
+
+.footer{
+	height:285px;
+	background:#141414;
+	color:#fff;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	padding:100px 100px 0;
+	box-sizing:border-box;
+	display:flex;
+	justify-content:space-between;
+}
+
+.sub-logo>.title{
+	font-size:18px;
+	font-weight:600;
+	margin-bottom:20px;
+}
+
+/* 이미지가 2개씩 보이게 하는 레이아웃 . 이미지 영역에서 이미지가 한줄에 2개씩 보이게 하는 (2단) 레이아웃 */
+
+@media screen and (max-width:1400px){
+	.group{
+		width:680px;
+	}
+}
+
+/* 이미지가 1개씩 보이게 하는 레이아웃 . 이미지 영역에서 이미지가 한줄에 1개씩 보이게 하는 (2단) 레이아웃 */
+@media screen and (max-width:700px){
+	.header{
+		padding:0;
+	}
+
+	.section1{
+		height:auto;
+		padding:80px 0;
+	}
+
+	.section-heading{
+		font-size:22px;
+	}
+
+	.section-paragraph{
+		width:100%;
+		padding:0 30px;
+		box-sizing:border-box;
+	}
+
+	.group{
+		width:340px;
+	}
+
+	.footer{
+		height:auto;
+		padding:50px 30px;
+		display:block;
+	}
+
+	.sub-logo{
+		margin-bottom:30px;
+	}
+
+}

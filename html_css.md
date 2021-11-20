@@ -301,6 +301,7 @@ UTF-8 : universal 문자 인코딩 방식 - 영어를 포함한 세계언어 표
 # CSS
 
 ## CSS Syntax
+
 https://www.w3schools.com/css/css_syntax.asp
 
 ```
@@ -311,6 +312,7 @@ h1 {
 ```
 
 ## CSS Selector
+
 https://www.w3schools.com/html/html_id.asp
 https://www.w3schools.com/html/html_classes.asp
 
@@ -437,6 +439,7 @@ div{
 ## Text Contents Styling
 
 ### CSS Text
+
 https://www.w3schools.com/css/css_text.asp
 
 - color : text color 지정
@@ -470,6 +473,7 @@ p {
   - wrap(default), nowrap
 
 ### CSS Font
+
 https://www.w3schools.com/css/css_font.asp
 
 - font-family : 글꼴 종류
@@ -513,16 +517,19 @@ font-family:굴림, 돋움, sans-serif;
 - font-size : 크기
 
 ### CSS links
+
 https://www.w3schools.com/css/css_link.asp
 
 - 4가지 상태 구분을 해서 각각 스타일링을 할 수 있음
 
 ### CSS list
+
 https://www.w3schools.com/css/css_list.asp
 
 - 목록에서 자동으로 생성되는 기호, 숫자를 제거하고 사용함
 
 ### CSS Table
+
 https://www.w3schools.com/css/css_table.asp
 
 - Table 셀 테두리 사이의 틈을 없애고 사용
@@ -535,6 +542,7 @@ https://www.w3schools.com/css/css_table.asp
 - 크기 조정, 배치 => Box Styling
 
 ## Box Model
+
 https://www.w3schools.com/css/css_boxmodel.asp
 
 - HTML element는 박스형태로 표현(디자인)
@@ -543,17 +551,19 @@ https://www.w3schools.com/css/css_boxmodel.asp
   - padding(안쪽 여백)
   - border(테두리)
   - margin(바깥 여백)]
-  - * background(배경) - 박스모델과 연관
-    - background 적용 범위 : content, padding까지 적용
+  - - background(배경) - 박스모델과 연관
+    * background 적용 범위 : content, padding까지 적용
 
 ### height/ width
+
 https://www.w3schools.com/css/css_dimension.asp
 
 - 기본 특징 : height/width를 지정하지 않았을 때 특징
+
   - Block
     - height : 자식요소를 기준으로 맞춰짐
     - width : 부모요소를 기준으로 채워짐
-  - Inline 
+  - Inline
     - height/width : 자식요소를 기준으로 맞춰짐
 
 - px : 수치값으로 고정
@@ -562,13 +572,14 @@ https://www.w3schools.com/css/css_dimension.asp
   - 부모의 크기가 변경되면 따라서 변경됨(유동형: fluid)
 
 ### padding
+
 https://www.w3schools.com/css/css_padding.asp
 
 > 방향 작용 순서(top에서 시작, 시계방향 순서로 적용)
-> 
+>
 > top -> right -> botton -> left
 
-- padding-top 
+- padding-top
 - padding-right
 - padding-bottom
 - padding-left
@@ -578,14 +589,16 @@ https://www.w3schools.com/css/css_padding.asp
 ```
 padding : 10px 20px 30px 40px;
 padding : 10px 20px 30px;
-padding : 10px 20px; 
+padding : 10px 20px;
 padding : 10px;
 ```
 
 ### border
+
 https://www.w3schools.com/css/css_border.asp
 
 - border 축약표현(shorthand)
+
 ```
 border : 1px solid red;
 
@@ -602,27 +615,31 @@ border-left : 1px solid red;
 - padding과 같음
 
 - margin collapse(충돌/ 상쇄)
-https://www.w3schools.com/css/css_margin_collapse.asp
+  https://www.w3schools.com/css/css_margin_collapse.asp
 
   - 박스가 위아래 바향으로 놓여있을 때 생기는 현상(좌우 방향에서는 생기지 않음)
   - 위아래 놓여있는 박스의 사이에 margin을 적용했을 때 margin이 합쳐지지 않고 큰 margin만 적용
   - 위아래 인접해있는 박스 사이의 margin을 적용할 때 박스 한쪽을 기준으로 적용
 
-### backgrond 
-https://www.w3schools.com/css/css_background.asp 
+### backgrond
+
+https://www.w3schools.com/css/css_background.asp
 
 - 배경 : 색, 이미지
   - backgrond-color
 - 배경이미지
+
   - background-image
   - background-repeat : 배경이미지 반복여부
   - background-position : 배경이미지 고정여부
   - background-attachment
 
 - 투명도
+
   - opacity, transparency, alpha
 
 - opacity
+
 ```
 p{
   opacity:0.5; /* p 요소 전체를 0.5만큼 반투명 설정 */
@@ -630,6 +647,7 @@ p{
 ```
 
 - transprency
+
 ```
 h1{
   background-color:transparent; /* 투명 배경 */
@@ -645,11 +663,13 @@ div{
 ```
 
 - background-repeat
+
   - repeat-x, repeat-y, no-repeat
 
 - background-position
   - left, center, right / top, center, bottom
   - px
+
 ```
 h1{
   background-position : value1 value2
@@ -661,6 +681,7 @@ h1{
 ```
 
 - background-attachment
+
   - fixed
 
 - background 축약 표현(shorthand)
@@ -675,21 +696,22 @@ h1{
 - inline-block : 인라인 요소 특징(나란히 배치)과 블럭요소 특징(박스모델이 적용)
 
 - display : 화면에 표시되는 박스 성질을 변경
-  - block, inline, inline-block 
+  - block, inline, inline-block
     - inline, inline-block에서 인라인 요소 단점 : 제어 할 수 없는 여백
   - none : 화면에 표시하지 않음
-  - flex : 
+  - flex :
 
 ### 박스 크기 계산
 
 - width/height, padding, border가 박스 크기 계산에 적용되는 구성요소
 - box-sizing:border-box; 적용하면 width/height가 박스 전체길이로 적용됨
 
-##  HTML Structure Styling - layout
+## HTML Structure Styling - layout
 
 - 박스 배치
+
   - 가로
-  - 세로 
+  - 세로
 
 - 규칙
   - 가로, 세로 방향으로 배치될 때 한 가지 연결
@@ -701,16 +723,19 @@ h1{
 - 자식요소(배치되는 박스)에 적용하는 css property
 
 - display:flex; 적용
-- flexbox 적용했을 때 width/height의기본 특징이 뒤바뀜. 
+- flexbox 적용했을 때 width/height의기본 특징이 뒤바뀜.
 
 - flex-direction
+
   - colum(세로), row(가로)
   - colum : 축이 90도 회전 => 가로방향 정렬 : align-items
 
 - flex-wrap
+
   - wrap : 자식요소의 크기를 유지하면서 박스가 줄바꿈되어 표시
 
 - justify-content
+
   - flex-start, center, flex-end, space-around, space-between
 
 - align-items
@@ -719,5 +744,29 @@ h1{
 ## 반응형 웹
 
 - 뷰포트 설정
-- 미디어 쿼리 
+- 미디어 쿼리
+
+  - @media (at rule에 포함되는 키워드)
+  - 브라우저의 해상도 범위(px)를 구분할 때 사용
+  - 열린범위 사용 시 해상도 순서
+    - pc 기준 : pc -> tablet -> smart phone
+
+```
+@media screen and (max-width:1920px)
+
+@media screen and (max-width:1024px)
+
+@media screen and (max-width:768px)
+```
+
 - 해상도 구역 나누기(break point)
+
+  - screen 해상도(resolution)
+
+    - pc 모니터 해상도 1024 ~ 1920px
+    - tablet PC screen 해상도 768 ~ 1024px
+    - snart phone screen 해상도 320 ~ 640px
+
+  - 연결되는 범위
+  - 열린 범위로 설정. (한쪽 방향으로 트기)
+    Ex) < 1920, < 1024, < 768
