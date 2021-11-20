@@ -40,3 +40,19 @@
 - 배열 / 객체 / class
 - 추가 문법 
 
+### Js variable (변수)
+https://www.w3schools.com/js/js_variables.asp
+
+- 변하는 수
+- 수(값:데이터/ value)가 저장되는 공간
+- 변수를 사용하기 위해서 선언(declaration)해야 함
+```
+변수선언키워드 변수이름 [= 초기값];
+
+** 키워드 : 예약어
+** [] : 생략 가능
+
+var a = 0;
+
+** var(variable) : 변수 선언 키워드
+```
