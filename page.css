@@ -81,6 +81,10 @@ table {
 	color:#10c9c3
 }
 
+.hamburger{
+
+}
+
 .section1{
 	height:315px;
 	background:#f6f6f6;
@@ -155,12 +159,53 @@ table {
 /* 이미지가 1개씩 보이게 하는 레이아웃 . 이미지 영역에서 이미지가 한줄에 1개씩 보이게 하는 (2단) 레이아웃 */
 @media screen and (max-width:700px){
 	.header{
+		padding:20px;
+		height:70px;
+		width:100%;
+		position:fixed; /*position:fixed, absolute 가로길이가 자식요소에 맞춰짐*/
+		top:0;
+		left:0;
+	}
+
+	.gnb{
+		position:absolute;
+		top:70px;
+		right:0;
+		display:none;
+		}
+
+	.gnb.active{
+		display:block;
+	}
+
+	.gnb-list{
+		display:block;
+		padding:50px 50px 50px 0;
+		background:#fff;
+	}
+
+	.gnb-item{
+		margin-bottom:10px;
+	}
+
+	.hamburger{
+		display:block;
+		background:none;
+		border:0;
+		width:30px;
+		height:25px;
 		padding:0;
+	}
+
+	.hamburger>img{
+		width:30px;
+		height:25px;
 	}
 
 	.section1{
 		height:auto;
 		padding:80px 0;
+		margin-top:70px;
 	}
 
 	.section-heading{

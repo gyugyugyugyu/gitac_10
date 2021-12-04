@@ -11,17 +11,41 @@
 
   console.log(cars);
 
-  cars[0] = 'hyundai'
+  cars[0] = 'hyundai';
+  // 내용 바꾸기
 
-  console.log(cars[0])
+  console.log(cars[0]);
 
   cars.push('kia');
+  // 내용 추가
 
   console.log(cars);
 
   cars.pop();
+  // 내용 삭제
 
   console.log(cars);
+
+  console.log(cars.length);
+
+  const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 20,
+    weight: 70,
+    fullName:function(){
+      console.log(this.firstName + this.lastName);
+    }
+  };
+
+  console.log(person);
+
+  person.age = 22;
+
+  console.log(person);
+
+  person.firstName();
+  
 </script>
 <body>
   <h1>배열/ 객체</h1>

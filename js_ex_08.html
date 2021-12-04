@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>
+    DOM
+  </h1>
+
+  <p class="paragraph" id="text">HTML DOM 1</p>
+  <p class="paragraph">HTML DOM 2</p>
+  <p class="paragraph">HTML DOM 3</p>
+</body>
+<script>
+  // HTML4 API
+  // class
+  console.log( document.getElementsByClassName('paragraph') );
+  // id
+  console.log( document.getElementById('text'));  
+  
+  // HTML5 API
+  // class
+  console.log( document.querySelector('.paragraph') );
+  // id
+  console.log( document.querySelector('#text') );
+  // class 여러 개 접근 / tag 여러 개 접근
+  console.log( document.querySelectorAll('.paragraph'));
+
+
+</script>
+</html>

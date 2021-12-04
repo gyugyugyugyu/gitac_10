@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    class Car {
+      constructor(){
+        this.name = 'Kia';
+        this.year = 2021;
+      }
+    }
+
+    console.log(Car);
+
+    let car1 = new Car(); //Car class를 사용해서 데이터 생성
+
+    console.log(car1);
+
+    const car2 = {
+      name: 'Hyandai',
+      year: 2020
+    }
+
+    console.log(car2);
+
+    let carData1 = new Car();
+    let carData2 = new Car();
+    let carData3 = new Car();
+
+    class CarBrand {
+      constructor(a, b){
+        this.name = a;
+        this.year = b;
+      }
+      print(){
+        return (this.name + this.year);
+      }
+    }
+
+    let carInfo1 = new CarBrand('Kia', 2021);
+    let carInfo2 = new CarBrand('Hyundai', 2021);
+    let carInfo3 = new CarBrand('GM', 2021);
+
+    console.log( carInfo1.print() );
+    console.log( carInfo2.print() );
+    console.log( carInfo3.print() );
+
+  </script>
+</head>
+<body>
+  <h1>클래스</h1>
+</body>
+</html>
