@@ -1,83 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="page.css">
-  <script src="page.js" defer></script>
-</head>
-<body>
-  <header class="header">
-    <h1 class="logo">
-      <img class="logo-image" src="images/logo.png" alt="Piroll logo">
-    </h1>
-    <nav class="gnb"> <!-- Global Navigation Bar -->
-      <ul class="gnb-list">
-        <li class="gnb-item"><a href="" class="gnb-link">HOME</a></li>
-        <li class="gnb-item"><a href="" class="gnb-link">ABOUT</a></li>
-        <li class="gnb-item"><a href="" class="gnb-link">CONTACT</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="page.css" />
+    <script src="page.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">
+        <img class="logo-image" src="images/logo.png" alt="Piroll logo" />
+      </h1>
+      <nav class="gnb">
+        <!-- Global Navigation Bar -->
+        <ul class="gnb-list">
+          <li class="gnb-item"><a href="" class="gnb-link">HOME</a></li>
+          <li class="gnb-item"><a href="" class="gnb-link">ABOUT</a></li>
+          <li class="gnb-item"><a href="" class="gnb-link">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="hamburger">
+        <img src="images/hamburger-menu.svg" alt="메뉴" />
+      </button>
+    </header>
+    <section class="section1">
+      <h2 class="section-heading">UI/UX & Graphic Designer</h2>
+      <p class="section-paragraph">
+        HTML5는 HTML 4.01, XHTML 1.0, DOM 레벨 2 HTML에 대한 차기 표준 제안이다.
+        비디오, 오디오 등 다양한 부가기능과 최신 멀티미디어 콘텐츠를 액티브X
+        없이 브라우저에서 쉽게 볼 수 있게 하는 것을 목적으로 한다.
+      </p>
+    </section>
+    <section class="section2">
+      <div class="group">
+        <img class="visual-content" src="images/image_01.jpg" alt="" />
+        <img class="visual-content" src="images/image_02.jpg" alt="" />
+        <img class="visual-content" src="images/image_03.jpg" alt="" />
+        <div class="visual-wrap">
+          <video class="video-content" autoplay muted loop>
+            <source src="video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="group">
+        <img class="visual-content" src="images/image_04.jpg" alt="" />
+        <div class="visual-wrap">
+          <video class="video-content" autoplay muted loop>
+            <source src="rain.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <img class="visual-content" src="images/image_05.jpg" alt="" />
+        <img class="visual-content" src="images/image_06.jpg" alt="" />
+      </div>
+      <div class="group">
+        <img class="visual-content" src="images/image_07.jpg" alt="" />
+        <img class="visual-content" src="images/image_08.jpg" alt="" />
+        <iframe
+          class="visual-content"
+          src="https://www.youtube.com/embed/53SlwIRK1v8?autoplay=1&mute=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <img class="visual-content" src="images/image_09.jpg" alt="" />
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="sub-logo">
+        <div class="title">Piroll Design, Inc.</div>
+        <div class="copyright">
+          <!-- &copy; Entity code -->
+          &copy; 2017 Piroll. All right reserved.<br />
+          Designed by gyu.
+        </div>
+      </div>
+      <ul class="sns-list">
+        <li class="sns-item">Facebook</li>
+        <li class="sns-item">Twitter</li>
+        <li class="sns-item">Instagram</li>
+        <li class="sns-item">Dribbble</li>
       </ul>
-    </nav>
-    <button type="button" class="hamburger">
-      <img src="images/hamburger-menu.svg" alt="메뉴">
-    </button>
-  </header>
-  <section class="section1">
-    <h2 class="section-heading">UI/UX & Graphic Designer</h2>
-    <p class="section-paragraph">
-      HTML5는 HTML 4.01, XHTML 1.0, DOM 레벨 2 HTML에 대한 차기 표준 제안이다.
-      비디오, 오디오 등 다양한 부가기능과 최신 멀티미디어 콘텐츠를 액티브X 없이
-      브라우저에서 쉽게 볼 수 있게 하는 것을 목적으로 한다.
-    </p>
-  </section>
-  <section class="section2">
-    <div class="group">
-      <img class="visual-content" src="images/image_01.jpg" alt="">
-      <img class="visual-content" src="images/image_02.jpg" alt="">
-      <img class="visual-content" src="images/image_03.jpg" alt="">
-      <div class="visual-wrap">
-       <video class="video-content" autoplay muted loop>
-        <source src="video.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-    <div class="group">
-      <img class="visual-content" src="images/image_04.jpg" alt="">
-      <div class="visual-wrap"> 
-        <video class="video-content" autoplay muted loop>
-        <source src="rain.mp4" type="video/mp4">
-        </video>
-      </div>
-      <img class="visual-content" src="images/image_05.jpg" alt="">
-      <img class="visual-content" src="images/image_06.jpg" alt="">
-    </div>
-    <div class="group">
-      <img class="visual-content" src="images/image_07.jpg" alt="">
-      <img class="visual-content" src="images/image_08.jpg" alt="">
-      <iframe class="visual-content" src="https://www.youtube.com/embed/53SlwIRK1v8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <img class="visual-content" src="images/image_09.jpg" alt="">
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="sub-logo">
-      <div class="title">Piroll Design, Inc.</div>
-      <div class="copyright">
-        <!-- &copy; Entity code -->
-        &copy; 2017 Piroll. All right reserved.<br>
-        Designed by gyu.
-      </div>
-    </div>
-    <ul class="sns-list">
-      <li class="sns-item">Facebook</li>
-      <li class="sns-item">Twitter</li>
-      <li class="sns-item">Instagram</li>
-      <li class="sns-item">Dribbble</li>
-    </ul>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
