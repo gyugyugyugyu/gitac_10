@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+  */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* 여기부터 진짜 CSS */
+
+  @font-face {
+      font-family: 'RixYeoljeongdo_Regular';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  .name{
+    margin: 10px;
+    font-weight: 1000;
+    font-size: 50px;
+  }
+
+  .h3{
+    color:aqua;
+    margin: 10px;
+  }
+
+  .paragraph{
+    font-weight: 700;
+    margin: 10px;
+  }
+
+  .item{
+    font-family: 'RixYeoljeongdo_Regular';
+    margin: 10px;
+  }
+
+  .img{
+    width: 400px;
+    margin: 10px;
+  }
+
+  .video{
+    margin: 10px;
+    width: 700px;
+    height: 400px;
+  }
+
+  .header{
+    background-color: #FF0000;
+    width: 500px;
+    height: 100px;
+    font-weight: 700;
+    display:flex;
+    box-sizing:border-box;
+  }
+
+  .nav{
+    background-color:#04B404;
+    width: 500px;
+    height: 100px;
+    font-weight: 700;
+    display:flex;
+    box-sizing:border-box;
+  }
+
+  .section{
+    background-color: #00FFFF;
+    width: 300px;
+    height: 200px;
+    font-weight: 700;
+    display:flex;
+    box-sizing:border-box;
+  }
+
+  .article{
+    background-color: #ACFA58;
+    width: 300px;
+    height: 200px;
+    font-weight: 700;
+    display:flex;
+    box-sizing:border-box;
+  }
+
+  .aside{
+    background-color: #F5A9F2;
+    width: 200px;
+    height: 400px;
+    font-weight: 700;
+    display:flex;
+    box-sizing:border-box;
+  }
+
+  .flex-container{
+    display:flex;
+    box-sizing:border-box;
+  }
+
+  .footer{
+    background-color: #424242;
+    width: 500px;
+    height: 100px;
+    font-weight: 700;
+    display:flex;
+    box-sizing:border-box;
+  }
+
+
+
+  </style>
+</head>
+
+<body>
+  <h1 class="name">1번문제</h1>
+  <h2>Content1. 제목</h2>
+  <h3 class="h3">웹 개발 시험</h3>
+
+  <h2>Content2. 단락</h2>
+  <p class="paragraph">
+    선생님 그간 수고 많으셨습니다.
+  </p>
+
+  <h2>Content3. 목록</h2>
+  <ul class="list">
+    <li class="item">HTML</li>
+    <li class="item">CSS</li>
+    <li class="item">Javascript</li>
+  </ul>
+
+  <h2>Content4. 이미지</h2>
+  <img class="img" src="images/image_01.jpg" alt="분홍그림"/>
+
+  <h2>Content5. 비디오</h2>
+  <iframe 
+  class="video"
+  src="https://www.youtube.com/embed/JRI3i-56VCg" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen></iframe>
+
+  <h1 class="name">2번문제</h1>
+
+  <header class="header">
+    <h6>header</h6>
+  </header>
+  <nav class="nav">
+    <h6>nav</h6>
+  </nav>
+  <div class="flex-container">
+    <section class="section">
+      <h6>section</h6>    
+    </section>
+    <article class="article">
+      <h6>article</h6>      
+    </article>
+    <aside class="aside">
+      <h6>aside</h6>   
+    </aside>
+  </div>
+  <footer class="footer">
+    <h6>footer</h6>      
+  </footer>
+
+  
+
+  <h1 class="name">3번문제</h1>
+
+</body>
+</html>
