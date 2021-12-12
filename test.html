@@ -101,8 +101,6 @@
     width: 500px;
     height: 100px;
     font-weight: 700;
-    display:flex;
-    box-sizing:border-box;
   }
 
   .nav{
@@ -110,8 +108,6 @@
     width: 500px;
     height: 100px;
     font-weight: 700;
-    display:flex;
-    box-sizing:border-box;
   }
 
   .section{
@@ -119,8 +115,6 @@
     width: 300px;
     height: 200px;
     font-weight: 700;
-    display:flex;
-    box-sizing:border-box;
   }
 
   .article{
@@ -128,8 +122,6 @@
     width: 300px;
     height: 200px;
     font-weight: 700;
-    display:flex;
-    box-sizing:border-box;
   }
 
   .aside{
@@ -137,13 +129,10 @@
     width: 200px;
     height: 400px;
     font-weight: 700;
-    display:flex;
-    box-sizing:border-box;
   }
 
   .flex-container{
-    display:flex;
-    box-sizing:border-box;
+      display:flex;
   }
 
   .footer{
@@ -151,11 +140,37 @@
     width: 500px;
     height: 100px;
     font-weight: 700;
-    display:flex;
-    box-sizing:border-box;
   }
 
+  .section1 {
+  position: relative;
+  /* 위에 건 carousel 하려고 추가 */
+}
 
+.carousel {
+  position: absolute;
+  /* 화면 바깥에 두기 위해서 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 95px;
+  box-sizing: border-box;
+}
+
+.carousel.current{
+  left: 0;
+  transition: left 1s;
+}
+
+.carousel.prev {
+  left: -100%;
+  transition: left 1s;
+}
+
+.carousel.next {
+  left: 100%;
+}
 
   </style>
 </head>
@@ -197,13 +212,19 @@
   <nav class="nav">
     <h6>nav</h6>
   </nav>
+  <!-- div 두 번 묶어줘야!
+  1) section + article + aside
+  2) section + article
+  -->
   <div class="flex-container">
-    <section class="section">
-      <h6>section</h6>    
-    </section>
-    <article class="article">
-      <h6>article</h6>      
-    </article>
+    <div>
+      <section class="section">
+        <h6>section</h6>    
+      </section>
+      <article class="article">
+        <h6>article</h6>      
+      </article>
+    </div>
     <aside class="aside">
       <h6>aside</h6>   
     </aside>
@@ -212,9 +233,82 @@
     <h6>footer</h6>      
   </footer>
 
-  
-
   <h1 class="name">3번문제</h1>
-
+  <section class="section1">
+      <div class="carousel current">
+        <h2 class="section-heading">0. carousel 효과</h2>
+        <p class="section-paragraph">
+          Javascript를 사용해서 Carousel 효과를 구현하시오
+        </p>
+      </div>
+      <div class="carousel next">
+        <h2 class="section-heading">1. carousel 효과</h2>
+        <p class="section-paragraph">
+          Javascript를 사용해서 Carousel 효과를 구현하시오
+        </p>
+      </div>
+      <div class="carousel prev">
+        <h2 class="section-heading">2. carousel 효과</h2>
+        <p class="section-paragraph">
+          Javascript를 사용해서 Carousel 효과를 구현하시오
+        </p>
+      </div>
+  </section>
 </body>
+<script>
+  let carousel = document.querySelectorAll('.carousel');
+  const play = document.querySelector('.btn-play');
+  const pause = document.querySelector('.btn-pause');
+
+  let current = 0; 
+  let next = 1;
+  let prev = 2;
+
+  let intervalNumber = 0;
+
+  function move(){
+  /* 
+  prev 변수 값이 carousel 개수 범위를 벗어났는지 체크하는 부분
+  */ 
+    if(prev > carousel.length-1){
+      prev = 0;
+    }
+    
+  /* 
+  html element에 불필요한 class 제거
+  */
+    for(let i = 0; i < carousel.length; i++){
+      carousel[i].classList.remove('current', 'prev', 'next');
+    }
+
+  /* 
+  carousel 아이템별로 올바른 class를 추가 => carousel 동작 
+  */
+    carousel[current].classList.add('prev');
+    carousel[next].classList.add('current');
+    carousel[prev].classList.add('next');
+
+  /* 
+  carousel 아이템 번호별로 rolling
+  */
+    current = next;
+    next = prev;
+    prev++;
+
+  };
+
+  intervalNumber = setInterval(function(){
+    move();
+  }, 2000);
+
+  pause.addEventListener('click', function(){
+    clearInterval(intervalNumber);
+  });
+
+  play.addEventListener('click', function(){
+    intervalNumber = setInterval(function(){
+      move();
+    }, 2000);
+  });
+</script>
 </html>
